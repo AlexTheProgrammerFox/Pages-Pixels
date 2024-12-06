@@ -1,0 +1,84 @@
+*{
+    margin: 1px;
+    padding: 2px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-image: 
+    url(Imagenes/gif\ escenario\ sonic.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.logo{
+    max-width: 5rem;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.abrirmenu,
+.cerrarmenu{
+    display: none;
+
+}
+
+@media screen and (max-width: 550px) {
+    .abrirmenu,
+    .cerrar-menu{
+        display: block;
+        font-size: 1.25rem;
+
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+    } 
+    
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a{
+        color: rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el ancho mínimo de la columna */
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Ajuste para que los productos se vean en columnas verticales */
+    width: 250px; /* Ajusta este valor para el ancho deseado */
+}
+
+.product-card img {
+    max-width: 100%; /* La imagen no se estirará más allá del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    margin-bottom: 10px;
+}
+
+.product-card h2 {
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-weight: bold;
+}
+
+.product-card button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Agrega un margen inferior al botón */
+}
+
+.show-variations {
+    background-color: #4CAF50; /* Color verde para el botón de variaciones */
+}
+
+.variations {
+    list-style: none;
+    padding: 0;
+}
+
+.variations li {
+    padding: 5px;
+    cursor: pointer; /* Agrega un cursor de puntero a los elementos de la lista */
+}
+
+.selected-variation {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 10px; /* Agrega un margen inferior al rectángulo */
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
